@@ -1,0 +1,1354 @@
+﻿@font-face {
+    font-family: 'HelveticaNeue-Thin';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Helvetica Neue Thin'), local('HelveticaNeue-Thin'), url('./fonts/HelveticaNeueLTStd-Th.otf');
+}
+@font-face {
+    font-family: 'HelveticaNeue-Light';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Helvetica Neue Light'), local('HelveticaNeue-Light'), url('./fonts/HelveticaNeueLTStd-Lt.otf');
+}
+@font-face {
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Roboto Condensed Regular'), local('RobotoCondensed-Regular'), url('./fonts/RobotoCondensed-Regular.ttf');
+}
+@font-face {
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Roboto Condensed Bold'), local('RobotoCondensed-Bold'), url('./fonts/RobotoCondensed-Bold.ttf');
+}
+body, html {} .hide {
+    display: none !important;
+}
+.disabled {
+    opacity: 0.3;
+}
+.widget {
+    height: auto !important;
+    min-height: 100%;
+    position: relative;
+    width: 100%;
+    float: left;
+    margin: 5px;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    font-family: 'HelveticaNeue-Light', 'Roboto Condensed', Arial, sans-serif;
+}
+.widget .header, .widget section, .widget .footer {
+    width: 100%;
+}
+.widget .header {
+    float: left;
+    border-bottom: 2px solid #666;
+}
+.widget .notificationWrpr {
+    font-family: 'Roboto Condensed', sans-serif;
+    position: absolute;
+    z-index: 95;
+}
+.widget .notify {
+    color: #fff;
+    float: left;
+    font-size: 14px;
+    line-height: 14px;
+    margin: 0 1px 1px 0;
+    padding: 5px;
+    z-index: 90;
+    position: relative;
+}
+.widget .notify.error {
+    background-color: #ef403d;
+}
+.widget .notify.success {
+    background-color: #96df73;
+}
+.widget .notify.warn {
+    background-color: #fed557;
+}
+.widget .notify-msg {
+    float: left;
+}
+.widget .notify-close {
+    width: 5px;
+    height: 5px;
+    background: url('../images/charting/sprite.png') -103px -144px;
+    cursor: pointer;
+    margin: 0 5px 0 20px;
+    float: left;
+}
+.widget .main {
+    float: left;
+    width: 100%;
+    position: relative;
+}
+.widget .canvas {
+    height: 100%;
+    position: relative;
+}
+.widget .footer {
+    float: left;
+}
+.widget ul, .widget li {
+    margin: 0;
+    padding: 0;
+    background: none;
+    list-style: none;
+    color: white;
+}
+.widget .loading {
+    background-color: rgba(0, 0, 0, 0.35);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 99;
+}
+/*---- error----*/
+
+.widgetError {
+    width: 100%;
+    background-color: #e4e4e4;
+    z-index: 97;
+    position: absolute;
+    top: 0;
+    bottom: 0
+}
+.widgetError .innerErrorWrpr {
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    height: 150px;
+}
+.widgetError .errorImg {
+    background: url('../images/charting/sprite.png');
+    background-position: 0px -181px;
+    width: 50px;
+    height: 56px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+}
+.widgetError .errorMsg {
+    font-size: 36px;
+    font-weight: 300;
+    color: #ff0000;
+    text-align: center;
+    text-overflow: ellipsis;
+    text-transform: capitalize;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0 15px;
+}
+.widgetError .errorSubMsg {
+    font-size: 18px;
+    font-family: Arial;
+    color: #333;
+    text-align: center;
+    text-overflow: ellipsis;
+}
+/*---- error----*/
+/*---- menu ----*/
+
+.menu-wrapper {
+    width: 100%;
+    font-family: Arial;
+    font-size: 14px;
+    line-height: 14px;
+    height: 45px;
+    background: #094c6c;
+}
+.menu-wrapper .date-wrpr {
+    border-left: 1px dashed #808080;
+    border-right: 1px dashed #808080;
+    float: right;
+    margin: 12.5px 0px;
+    padding: 0 15px;
+    min-width: 100px;
+    height: 20px;
+}
+.menu-wrapper .date {
+    color: #fff;
+    line-height: 20px;
+    font-size: 12px;
+}
+.menu-wrapper .settings {
+    background: url('../images/charting/sprite.png');
+    background-position: -80px -144px;
+    width: 17px;
+    height: 17px;
+    margin: 14px 12px;
+    float: right;
+    cursor: pointer;
+    position: relative;
+}
+.menu-wrapper .settings-menu-wrpr {
+    position: absolute;
+    right: 0;
+    z-index: 100;
+    margin-right: -5px;
+    padding-top: 21px;
+    float: right;
+}
+.menu-wrapper .settings-arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 8px solid #ccc;
+    float: right;
+    margin-right: 9px;
+    margin-bottom: -1px;
+}
+.menu-wrapper .settingsMenu {
+    background-color: #ccc;
+    border: 1px solid #868686;
+    padding-top: 4px;
+    clear: both;
+    -webkit-box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, .45);
+    box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, .45);
+}
+.menu-wrapper .settingsUl {
+    background-color: #fff;
+}
+/*.menu-wrapper .settingsEntry{
+    height: 45px;
+    line-height: 45px;
+    border-top: 1px solid #ccc;
+    padding: 0 20px;
+    color: #333;
+    min-width: 145px;
+    max-width: 245px;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.menu-wrapper .settingsEntry:hover{
+    color: #0c80d0;
+}*/
+
+.menu {
+    float: left;
+}
+li.entry {
+    display: inline;
+    float: left;
+}
+li.entry .entryDiv {
+    float: left;
+    padding: 14.5px 17px;
+    border-right: 1px dashed #808080;
+    background-color: #094c6c;
+    cursor: default;
+    position: relative;
+}
+.menu .entryDiv:hover {
+    /* background-color: #757575;*/
+    
+    background-color: #f0f0f0;
+    color: #777;
+}
+.menu.disabled .entryDiv:hover {
+    background-color: #000;
+}
+.submenu-wrapper {
+    position: absolute;
+    float: left;
+    /*background: #666;*/
+    
+    background: #f0f0f0;
+    margin-top: 14.5px;
+    margin-left: -17px;
+    padding: 0 1px 0px;
+    z-index: 100;
+}
+.submenu-wrapper .innerSubMenuWrpr {
+    padding: 0 14px;
+    /*background-color: #7c7c7c;*/
+    
+    background-color: #f0f0f0;
+}
+.submenu-column {
+    display: table-cell;
+}
+.submenu-wrapper .subEntry {
+    border-bottom: 1px solid #979797;
+}
+.submenu-wrapper .subEntryDiv {
+    /*color: #fff;*/
+    
+    color: #555;
+    font-size: 12px;
+    cursor: pointer;
+    height: 35px;
+    line-height: 35px;
+    min-width: 275px;
+    max-width: 275px;
+    padding: 0 7px;
+}
+.submenu-wrapper .subEntry:hover {
+    font-weight: bold;
+}
+.submenu-wrapper .checkmark {
+    background: url('../images/charting/sprite.png');
+    background-position: -66px -159px;
+    margin: 12.5px 16px 12.5px 0;
+    width: 13px;
+    height: 10px;
+    float: left;
+    display: inline;
+}
+.submenu-wrapper .selected {
+    font-weight: bold;
+}
+.selected .checkmark {
+    background-position: -65px -144px;
+}
+/*---- menu ----*/
+/*---- readings ----*/
+
+.readings {
+    background-color: rgba(221, 221, 221, 0.25);
+    background: url('../images/charting/sprite.png') repeat-x;
+    /* <IE9  Fix - no multiple background*/
+    
+    min-height: 51px;
+    width: 100%;
+    float: left;
+    position: relative;
+}
+.readings .reading-error {
+    background-color: #ff0000;
+}
+.readings .series-details {
+    font-family: 'Roboto Condensed', sans-serif;
+    float: left;
+    height: 100%;
+    margin: 18px 0 0 9px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    min-width: 120px;
+    max-width: 150px;
+}
+.readings .name {
+    display: inline;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: bold;
+}
+.readings a:link, .readings a:visited, .readings a:hover, .readings a:active {
+    text-decoration: none;
+    cursor: pointer;
+    color: #000;
+}
+.readings .exchange {
+    display: inline;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 200;
+}
+.readings .subtitle {
+    font-weight: 300;
+    text-transform: capitalize;
+    font-size: 14px;
+    line-height: 14px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.readings .core-readings {
+    float: left;
+    height: 100%;
+    letter-spacing: -0.01em;
+}
+.readings .arrow {
+    height: 20px;
+    width: 26px;
+    margin: 15.5px 0px;
+    background: url('../images/charting/sprite.png');
+    background-position: -55px -110px;
+    float: left;
+}
+.readings .up {
+    background-position: 0px -109px;
+}
+.readings .down {
+    background-position: -26px -109px;
+}
+.readings .core {
+    font-size: 28px;
+    line-height: 28px;
+    margin-top: 13px;
+    color: #000;
+    float: left;
+}
+.readings .change {
+    float: left;
+    margin-top: 22px;
+    margin-left: 5px;
+    height: 30px;
+    font-size: 18px;
+    line-height: 18px;
+    color: #ababab;
+}
+.readings .value, .percent {
+    display: inline;
+}
+.readings .green {
+    /*color: #0e9200;*/
+    /*MONEY CONTROL GREEN*/
+    
+    color: #449703
+}
+.readings .red {
+    /*color: #dc1616;*/
+    /*MONEY CONTROL RED*/
+    
+    color: #f01414
+}
+.readings .custom-buttons {
+    position: absolute;
+    left: 0;
+    margin: 13.5px 10px 13.5px 465px;
+}
+.readings .customBtn {
+    cursor: pointer;
+    height: 25px;
+    line-height: 25px;
+    font-size: 14px;
+    min-width: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0 10px;
+    color: #fff;
+    letter-spacing: -0.025em;
+    display: inline-block;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    text-shadow: 0px 0px 1px #000;
+    filter: dropshadow(color=#000, offx=0, offy=0);
+    /*
+    -webkit-box-shadow:  1px 1px 2px 2px rgba(0, 0, 0, 0.2);
+    box-shadow:  1px 1px 2px 2px rgba(0, 0, 0, 0.2);
+
+
+    -webkit-box-shadow: inset 0px 1px 2px 0px rgba(255, 255, 255, 0.38);
+    box-shadow: inset 0px 1px 2px 0px rgba(255, 255, 255, 0.38);*/
+}
+.readings .sell {
+    background-color: #dc1616;
+    border: 1px solid #961515;
+}
+.readings .buy {
+    background-color: #72a51b;
+    border: 1px solid #159621;
+}
+.readings .sub-readings {
+    float: right;
+    font-family: 'HelveticaNeue-Thin', sans-serif;
+    height: 100%;
+    margin-right: 9px;
+}
+.readings .reading-box {
+    min-width: 75px;
+    padding: 10px 0 6px;
+    margin: 0 5px;
+    float: left;
+}
+.readings #volume {
+    min-width: 90px;
+}
+.readings .reading-name {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: right;
+    padding-bottom: 3px;
+}
+.readings .reading-value {
+    font-size: 16px;
+    line-height: 18px;
+    text-align: right;
+}
+/*---- readings ----*/
+/*---- popup ----*/
+
+.widget .widget-popup {
+    font-family: Arial;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+}
+.widget .popup-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15% 0;
+    width: 390px;
+}
+.widget .inner-popup-wrapper {
+    padding: 3px;
+    background-color: #333;
+}
+.widget .popup-header {
+    background-color: #fff;
+    color: #006fc7;
+    height: 39px;
+    font-family: Arial;
+    font-size: 16px;
+    line-height: 39px;
+    position: relative;
+}
+.popup-wrapper .popup-title {
+    padding: 0 15px;
+    border-right: 1px solid #d1d1d1;
+    position: absolute;
+    right: 28px;
+    left: 0;
+}
+.popup-wrapper .close {
+    background: url('../images/charting/sprite.png') -66px -174px;
+    width: 9px;
+    height: 9px;
+    margin: 15.5px 9.5px;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+.widget .popup-main {
+    background-color: #fff;
+    border-bottom: 1px solid #d1d1d1;
+    position: relative;
+}
+.popup-wrapper .error {
+    display: block;
+    padding-left: 15px;
+    height: 67px;
+    line-height: 67px;
+}
+.popup-wrapper .error.hide {
+    border-top: 0px;
+    display: none;
+}
+.popup-wrapper li {
+    display: inline-table;
+    border-top: 1px solid #d1d1d1;
+}
+.popup-wrapper li.focus {
+    background-color: #f2f8fc;
+}
+.popup-wrapper .text {
+    display: table-cell;
+    color: #333;
+    width: 125px;
+    height: 67px;
+    line-height: 67px;
+    padding-left: 15px;
+}
+.widget .necessary {
+    color: red;
+    display: inline;
+}
+.popup-wrapper .popup-input {
+    height: 35px;
+    line-height: 35px;
+    border: 1px solid #d1d1d1;
+    font-size: 20px;
+    min-width: 230px;
+    display: table-cell;
+    color: #333;
+    padding: 0px;
+    margin-right: 25px;
+}
+.widget .popup-footer {
+    background-color: #e5e5e5;
+    border: 1px solid white;
+    height: 53px;
+    line-height: 53px;
+    padding-left: 125px
+}
+.widget .input-error {
+    background: red;
+    color: #fff;
+}
+.popup-wrapper .popup-input:focus {
+    outline: 0px;
+}
+.popup-wrapper .buttons {
+    border: 1px solid #000;
+    background-color: #333;
+    height: 29px;
+    line-height: 29px;
+    padding: 0 11px;
+    color: #fff;
+    cursor: pointer;
+}
+/*---- popup ----*/
+/*---- snapshot ----*/
+
+.snapshot {
+    min-height: 59px;
+    float: left;
+    border-right: 1px solid #fff;
+    position: relative;
+    color: #fff;
+}
+.snapshot .inner-wrpr {
+    padding: 9px 9px;
+    min-width: 90px;
+    cursor: pointer;
+}
+.snapshot .inner-wrpr-serie {
+    min-width: 140px;
+}
+.snapshot .hdr {
+    width: 100%;
+    position: relative;
+}
+/*.snapshot .serieName{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: uppercase;
+    margin: 0 30px 2px 0;
+}*/
+
+.snapshot a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+}
+.snapshot .close {
+    background: url('../images/charting/sprite.png') -103px -144px;
+    height: 5px;
+    width: 5px;
+    top: 0;
+    right: 0;
+    position: absolute;
+    cursor: pointer;
+}
+.snapshot .separator {
+    border-top: 1px solid rgba(0, 0, 0, 0.25);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    height: 0px;
+    width: 100%;
+}
+.snapshot .serie-readings {
+    margin: 4px 0 0;
+}
+.snapshot .volume-readings {
+    margin: 3px 0 0;
+    font-size: 12px;
+}
+.snapshot .value {
+    margin-right: 5px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 18px;
+    display: inline-block;
+    min-width: 50%;
+    letter-spacing: -0.025px;
+}
+.snapshot .vol-value {
+    min-width: 30%;
+    font-size: 12px;
+    line-height: 12px;
+}
+.snapshot .change {
+    font-size: 12px;
+    line-height: 12px;
+    display: inline-block;
+}
+/*---- snapshot ----*/
+
+.range-selector {
+    float: left;
+    font-family: Arial;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    border-right: 2px solid #ccc;
+    position: relative;
+    z-index: 98;
+    margin-top: -66px;
+}
+.range-buttons {
+    float: left;
+    min-width: 23px;
+    height: 63px;
+    line-height: 63px;
+    background-color: #eee;
+    border-right: 1px solid #ccc;
+    color: #858585;
+    cursor: pointer;
+    font-size: 17px;
+    padding: 0 7px;
+    text-align: center;
+}
+.range-buttons:hover {
+    background-color: #ccc;
+}
+.button-selected {
+    background-color: #666;
+    color: #efefef;
+}
+.calender-buttons {
+    float: left;
+    min-width: 45px;
+    height: 63px;
+    line-height: 63px;
+    background-color: #eee;
+    border-right: 1px solid #ccc;
+}
+.calender-image {
+    margin: 10.5px 0;
+    margin-right: auto;
+    margin-left: auto;
+    height: 42px;
+    width: 28px
+}
+.to .calender-image {
+    background: url('../images/charting/sprite.png') -0px -140px;
+}
+.from .calender-image {
+    background: url('../images/charting/sprite.png') -32px -140px;
+}
+.calender-page {
+    background-color: #666;
+    color: #efefef;
+    padding: 0 7px;
+    height: 100%;
+    text-align: center;
+}
+.pointer {
+    cursor: pointer
+}
+.calender-page .date {
+    font-size: 18px;
+    line-height: 18px;
+    color: #fff;
+    padding: 9px 0 0 0;
+}
+.calender-page .month {
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    color: #999;
+}
+.calender-page .year {
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 14px;
+    color: #ccc;
+}
+.calender {
+    margin-top: -295px;
+    /*HACKY - TEMPORARY*/
+    
+    float: left;
+}
+/** ---- indicators ----**/
+
+.indicators {
+    float: left;
+    /*margin-top: 18px;*/
+}
+.indicator {
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    margin-top: 5px;
+}
+.indicators-header, .sub-canvas {
+    float: left;
+    width: 100%;
+}
+/*.indicators-header{
+    border-bottom: 3px solid #6a6a6a;
+    line-height: 30px;
+    padding: 5px 0;
+}*/
+
+.indicator-name {
+    float: left;
+    margin: 0 10px;
+    color: #333;
+    font-size: 20px;
+    font-weight: 300;
+}
+.indicator .indicator-readings {
+    float: left;
+    font-size: 16px;
+    margin-left: 70px;
+}
+.indicator .remove-indicator {
+    background: url('../images/charting/sprite.png') -66px -182px;
+    cursor: pointer;
+    float: right;
+    height: 29px;
+    margin-right: 10px;
+    width: 29px;
+}
+.indicator-val {
+    display: inline;
+    text-transform: capitalize;
+    float: left;
+    height: 100%;
+    min-width: 150px;
+}
+/** ---- indicators ----**/
+/*----small----*/
+
+.readings-small {
+    height: 35px;
+    min-height: 35px;
+}
+.readings .series-details-small {
+    max-width: 125px;
+    min-width: 80px;
+    margin: 2px 0 0 5px;
+}
+.readings .name-small {
+    font-size: 14px;
+    line-height: 14px;
+}
+.readings .exchange-small {
+    font-size: 9px;
+    line-height: 9px;
+}
+.readings .subtitle-small {
+    font-size: 11px;
+    line-height: 11px;
+}
+.readings .core-small {
+    font-size: 18px;
+    line-height: 18px;
+    margin: 10px 0 0 10px;
+}
+.readings .reading-box-small {
+    min-width: 53px;
+    margin: 0 3.5px;
+    padding: 7px 0 0 0;
+}
+.readings .reading-name-small {
+    font-size: 10px;
+    line-height: 10px;
+}
+.readings .reading-value-small {
+    font-size: 12px;
+    line-height: 12px;
+}
+.range-selector-small {
+    margin-top: -48px;
+}
+.range-buttons-small {
+    height: 45px;
+    line-height: 45px;
+    font-size: 13px;
+    padding: 0 3.33px;
+}
+.snapshot-small {
+    min-height: 35px;
+}
+.snapshot .inner-wrpr-small {
+    padding: 6px 6px 4px;
+    min-width: 130px;
+}
+.snapshot .serieName-small {
+    font-size: 10px;
+    line-height: 10px;
+}
+.snapshot .serie-readings-small {
+    margin: 2px 0 0;
+}
+.snapshot .volume-readings-small {
+    margin: 2px 0 0;
+}
+.snapshot .value-small {
+    font-size: 14px;
+    line-height: 14px;
+}
+.snapshot .change-small {
+    font-size: 10px;
+    line-height: 10px;
+}
+/*----small----*/
+/* Calender CSS*/
+/* ==========================================================================
+   $BASE-PICKER
+   ========================================================================== */
+/**
+ * Note: the root picker element should __NOT__ be styled
+ * more than what’s here. Style the `.picker__holder` instead.
+ */
+
+.picker {
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.2;
+    color: #000000;
+    position: absolute;
+    z-index: 10000;
+}
+/**
+ * The picker input element.
+ */
+
+.picker__input {
+    cursor: default;
+}
+/**
+ * When the picker is opened, the input element is “activated”.
+ */
+
+.picker__input.picker__input--active {
+    border-color: #0089ec;
+}
+/**
+ * The holder is the only “scrollable” top-level container element.
+ */
+
+.picker__holder {
+    width: 100%;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+/**
+ * Note: the root picker element should __NOT__ be styled
+ * more than what’s here. Style the `.picker__holder` instead.
+ */
+
+.picker {
+    width: 100%;
+}
+/**
+ * The holder is the base of the picker.
+ */
+
+.picker__holder {
+    position: absolute;
+    background: #ffffff;
+    border: 1px solid #aaaaaa;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    min-width: 176px;
+    max-width: 466px;
+    -webkit-border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+    max-height: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    opacity: 0;
+    -webkit-transform: translateY(-1em) perspective(600px) rotateX(10deg);
+    -moz-transform: translateY(-1em) perspective(600px) rotateX(10deg);
+    transform: translateY(-1em) perspective(600px) rotateX(10deg);
+    -webkit-transition: all 0.15s ease-out, max-height 0 0.15s;
+    -moz-transition: all 0.15s ease-out, max-height 0 0.15s;
+    transition: all 0.15s ease-out, max-height 0 0.15s;
+}
+/**
+ * When the picker opens...
+ */
+
+.picker--opened .picker__holder {
+    max-height: 25em;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    -moz-opacity: 1;
+    opacity: 1;
+    -webkit-transform: translateY(0) perspective(600px) rotateX(0);
+    -moz-transform: translateY(0) perspective(600px) rotateX(0);
+    transform: translateY(0) perspective(600px) rotateX(0);
+    -webkit-transition: all 0.15s ease-out, max-height 0;
+    -moz-transition: all 0.15s ease-out, max-height 0;
+    transition: all 0.15s ease-out, max-height 0;
+    -webkit-box-shadow: 0 6px 18px 1px rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0 6px 18px 1px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 6px 18px 1px rgba(0, 0, 0, 0.12);
+}
+/* ==========================================================================
+   $BASE-DATE-PICKER
+   ========================================================================== */
+/**
+ * The picker box.
+ */
+
+.picker__box {
+    padding: 0 1em;
+}
+/**
+ * The header containing the month and year stuff.
+ */
+
+.picker__header {
+    text-align: center;
+    position: relative;
+    margin-top: .75em;
+}
+/**
+ * The month and year labels.
+ */
+
+.picker__month, .picker__year {
+    font-weight: 500;
+    display: inline-block;
+    margin-left: .25em;
+    margin-right: .25em;
+}
+.picker__year {
+    color: #999999;
+    font-size: .8em;
+    font-style: italic;
+}
+/**
+ * The month and year selectors.
+ */
+
+.picker__select--month, .picker__select--year {
+    font-size: .8em;
+    border: 1px solid #b7b7b7;
+    height: 2.5em;
+    padding: .5em .25em;
+    margin-left: .25em;
+    margin-right: .25em;
+    margin-top: -0.5em;
+}
+.picker__select--month {
+    width: 35%;
+}
+.picker__select--year {
+    width: 22.5%;
+}
+.picker__select--month:focus, .picker__select--year:focus {
+    border-color: #0089ec;
+}
+/**
+ * The month navigation buttons.
+ */
+
+.picker__nav--prev, .picker__nav--next {
+    position: absolute;
+    top: -0.33em;
+    padding: .5em 1.33em;
+    width: 1em;
+    height: 1em;
+}
+.picker__nav--prev {
+    left: -1em;
+    padding-right: 1.5em;
+}
+.picker__nav--next {
+    right: -1em;
+    padding-left: 1.5em;
+}
+.picker__nav--prev:before, .picker__nav--next:before {
+    content: " ";
+    border-top: .5em solid transparent;
+    border-bottom: .5em solid transparent;
+    border-right: 0.75em solid #000000;
+    width: 0;
+    height: 0;
+    display: block;
+    margin: 0 auto;
+}
+.picker__nav--next:before {
+    border-right: 0;
+    border-left: 0.75em solid #000000;
+}
+.picker__nav--prev:hover, .picker__nav--next:hover {
+    cursor: pointer;
+    color: #000000;
+    background: #b1dcfb;
+}
+.picker__nav--disabled, .picker__nav--disabled:hover, .picker__nav--disabled:before, .picker__nav--disabled:before:hover {
+    cursor: default;
+    background: none;
+    border-right-color: #f5f5f5;
+    border-left-color: #f5f5f5;
+}
+/**
+ * The calendar table of dates
+ */
+
+.picker__table {
+    text-align: center;
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: fixed;
+    font-size: inherit;
+    width: 100%;
+    margin-top: .75em;
+    margin-bottom: .5em;
+}
+@media (min-height: 33.875em) {
+    .picker__table {
+        margin-bottom: .75em;
+    }
+}
+.picker__table td {
+    margin: 0;
+    padding: 0;
+}
+/**
+ * The weekday labels
+ */
+
+.picker__weekday {
+    width: 14.285714286%;
+    font-size: .75em;
+    padding-bottom: .25em;
+    color: #999999;
+    font-weight: 500;
+    /* Increase the spacing a tad */
+}
+@media (min-height: 33.875em) {
+    .picker__weekday {
+        padding-bottom: .5em;
+    }
+}
+/**
+ * The days on the calendar
+ */
+
+.picker__day {
+    padding: .3125em 0;
+    font-weight: 200;
+    border: 1px solid transparent;
+}
+.picker__day--today {
+    color: #0089ec;
+    position: relative;
+}
+.picker__day--today:before {
+    content: " ";
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    width: 0;
+    height: 0;
+    border-top: 0.5em solid #0059bc;
+    border-left: .5em solid transparent;
+}
+.picker__day--selected, .picker__day--selected:hover {
+    border-color: #0089ec;
+}
+.picker__day--highlighted {
+    background: #b1dcfb;
+}
+.picker__day--disabled:before {
+    border-top-color: #aaaaaa;
+}
+.picker__day--outfocus {
+    color: #dddddd;
+}
+.picker__day--infocus:hover, .picker__day--outfocus:hover {
+    cursor: pointer;
+    color: #000000;
+    background: #b1dcfb;
+}
+.picker__day--highlighted:hover, .picker--focused .picker__day--highlighted {
+    background: #0089ec;
+    color: #ffffff;
+}
+.picker__day--disabled, .picker__day--disabled:hover {
+    background: #f5f5f5;
+    border-color: #f5f5f5;
+    color: #dddddd;
+    cursor: default;
+}
+.picker__day--highlighted.picker__day--disabled, .picker__day--highlighted.picker__day--disabled:hover {
+    background: #bbbbbb;
+}
+/**
+ * The footer containing the "today" and "clear" buttons.
+ */
+
+.picker__footer {
+    text-align: center;
+}
+.picker__button--today, .picker__button--clear {
+    border: 1px solid #ffffff;
+    background: #ffffff;
+    font-size: .8em;
+    padding: .66em 0;
+    font-weight: bold;
+    width: 50%;
+    display: inline-block;
+    vertical-align: bottom;
+}
+.picker__button--today:hover, .picker__button--clear:hover {
+    cursor: pointer;
+    color: #000000;
+    background: #b1dcfb;
+    border-bottom-color: #b1dcfb;
+}
+.picker__button--today:focus, .picker__button--clear:focus {
+    background: #b1dcfb;
+    border-color: #0089ec;
+    outline: none;
+}
+.picker__button--today:before, .picker__button--clear:before {
+    position: relative;
+    display: inline-block;
+    height: 0;
+}
+.picker__button--today:before {
+    content: " ";
+    margin-right: .45em;
+    top: -0.05em;
+    width: 0;
+    border-top: 0.66em solid #0059bc;
+    border-left: .66em solid transparent;
+}
+.picker__button--clear:before {
+    content: "\D7";
+    margin-right: .35em;
+    top: -0.1em;
+    color: #ee2200;
+    vertical-align: top;
+    font-size: 1.1em;
+}
+/* ==========================================================================
+   $CLASSIC-DATE-PICKER
+   ========================================================================== */
+
+.menu-wrapper .view-btn {
+    padding: 6px 5px 5px;
+    font-size: 24px;
+    display: inline-block;
+    line-height: 24px;
+    text-align: center;
+    background: #cdcdcd;
+    border-radius: 2px;
+    cursor: pointer;
+    margin: 5px 0 5px;
+    width: 20px;
+    float: right;
+    color: #333;
+}
+.menu-wrapper .view-btn:hover {
+    background: #999;
+    color: #0c80d0;
+}
+.menu-wrapper .settingsEntry {
+    height: 45px;
+    line-height: 45px;
+    border-top: 1px solid #ccc;
+    padding: 0 20px;
+    color: #333;
+    min-width: 145px;
+    max-width: 245px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    /*display: -moz-inline-stack;*/
+    /*overflow: hidden;*/
+}
+.menu-wrapper .settingsEntry:hover {
+    color: #0c80d0;
+}
+/*changes for this copy*/
+
+.xbutton {
+    position: absolute;
+    right: 10px;
+    top: 310;
+}
+.snapshot .close {
+    background: url('../images/charting/sprite.png') no-repeat scroll -95px -116px transparent;
+    height: 20px;
+    width: 25px;
+    /* margin: 10px 5px 4px 5px; */
+    /* padding: 0px 0px 0px 0px; */
+    /* top: 0px; */
+    
+    bottom: 0px;
+    right: -8px;
+    position: absolute;
+    cursor: default;
+}
+.snapshot-exchange {
+    width: 32px;
+    float: right;
+}
+.snapshot-company {
+    width: 79px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    float: left;
+}
+.snapshot .serieName {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: uppercase;
+    margin: 0 30px 2px 0;
+    /* text-overflow: ellipsis; */
+    /* width: 100px; */
+    
+    white-space: nowrap;
+    width: 111px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+@font-face {
+    font-family: 'RupeeForadianRegular';
+    font-size: 15px;
+    src: url('fonts/rupee_foradian-webfont.eot');
+    /* IE9 Compat Modes */
+    
+    src: url('fonts/rupee_foradian-webfont.eot?iefix') format('embedded-opentype'),
+    /* IE6-IE8 */
+    
+    url('fonts/rupee_foradian-webfont.woff') format('woff'),
+    /* Modern Browsers */
+    
+    url('fonts/rupee_foradian-webfont.ttf') format('truetype'),
+    /* Safari, Android, iOS */
+    
+    url('fonts/rupee_foradian-webfont.svg#webfont2Zj0tNTg') format('svg');
+    /* Legacy iOS */
+}
+.RupeeForadian {
+    padding: 0px;
+    font-weight: normal;
+    font-size: 12px;
+    font-style: normal;
+    line-height: normal;
+    font-family: RupeeForadianRegular, sans-serif;
+}
+.snapshot-wrpr {
+    width: 100%;
+    background: url('../images/charting/tile.png') repeat-x rgba(221, 221, 221, 0.25);
+    border-top: 1px solid #ccc;
+    float: left;
+    position: relative;
+}
+.indicators-header {
+    border-bottom: 3px solid #6a6a6a;
+    line-height: 30px;
+    padding: 5px 0;
+    /*ankitz added position relative so when user hides the rangebar then the first indicator can overlap it*/
+    
+    position: relative;
+}
+/*DISABLING LINETYPE TILL ISSUE SOLVES*/
+
+#lineType-li {
+    display: none;
+}

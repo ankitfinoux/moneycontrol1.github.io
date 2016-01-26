@@ -1,0 +1,10 @@
+<div class='<%=classNames.settingsArrow%>'></div>
+<div class='<%=classNames.settingsMenu%>'>
+	<ul class='<%=classNames.settingsUl%>'>
+		<%entries.each(function(entry){%>
+			<li>
+				<div class='<%=classNames.settingsEntry%>' id='<%=entry.id%>'><%=entry.get('title')%></div>
+			</li>
+		<%});%>
+	</ul>
+</div>

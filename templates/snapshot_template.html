@@ -1,0 +1,20 @@
+<div class="inner-wrpr <%if(serie){%>inner-wrpr-<%=serie%><%}%> inner-wrpr-<%=mode%>">
+	<div class="hdr">
+		<div class="serieName serieName-<%=mode%>">
+			<%if(links && links.company){%><a href='<%=links.company%>'><%=title%></a><%}else{%><%=title%><%}%>
+		</div>
+		<div class="close"></div>
+		<div class="separator separator-<%=mode%>"></div>
+	</div>
+	<div class="vals">
+		<div class="serie-readings serie-readings-<%=mode%>">
+			<div class="value value-<%=mode%>" id="serie-value"></div>
+			<%if(hasChange){%><div class="change change-<%=mode%>" id="serie-change"></div><%}%>
+		</div>
+		<%if(hasVolume){%> 
+			<div class="volume-readings volume-readings-<%=mode%>">
+				VOL- <div class="value value-<%=mode%> vol-value"></div><%if(hasChange){%><div class="change change-<%=mode%>"></div><%}%>
+			</div>
+		<%}%>
+	</div>
+</div>

@@ -1,0 +1,854 @@
+{
+    "bse": [
+        {
+            "date": "06 Mar 2008",
+            "purpose": "Mahashivratri"
+        },
+        {
+            "date": "20 Mar 2008",
+            "purpose": "Id-E-Milad"
+        },
+        {
+            "date": "21 Mar 2008",
+            "purpose": "Good Friday"
+        },
+        {
+            "date": "14 Apr 2008",
+            "purpose": "Dr. Babasaheb Ambedkar Jayanthi"
+        },
+        {
+            "date": "18 Apr 2008",
+            "purpose": "Mahavir Jayanti"
+        },
+        {
+            "date": "01 May 2008",
+            "purpose": "Maharashtra Day"
+        },
+        {
+            "date": "19 May 2008",
+            "purpose": "Buddha Pournima"
+        },
+        {
+            "date": "15 Aug 2008",
+            "purpose": "Independence Day"
+        },
+        {
+            "date": "03 Sep 2008",
+            "purpose": "Ganesh Chaturthi"
+        },
+        {
+            "date": "02 Oct 2008",
+            "purpose": "Gandhi Jayanti/Ramzan Id"
+        },
+        {
+            "date": "09 Oct 2008",
+            "purpose": "Dasera"
+        },
+        {
+            "date": "28 Oct 2008",
+            "purpose": "Diwali (Lakshmi Poojan)"
+        },
+        {
+            "date": "30 Oct 2008",
+            "purpose": "Diwali (Bhau Bhij)"
+        },
+        {
+            "date": "13 Nov 2008",
+            "purpose": "Gurunanak Jayanthi"
+        },
+        {
+            "date": "09 Dec 2008",
+            "purpose": "Bakri Id"
+        },
+        {
+            "date": "25 Dec 2008",
+            "purpose": "Christmas"
+        },
+        {
+            "date": "08 Jan 2009",
+            "purpose": "Moharram"
+        },
+        {
+            "date": "26 Jan 2009",
+            "purpose": "Republic Day"
+        },
+        {
+            "date": "23 Feb 2009",
+            "purpose": "Mahashivratri"
+        },
+        {
+            "date": "10 Mar 2009",
+            "purpose": "Id-E-Milad"
+        },
+        {
+            "date": "11 Mar 2009",
+            "purpose": "Holi"
+        },
+        {
+            "date": "03 Apr 2009",
+            "purpose": "Ram Navmi"
+        },
+        {
+            "date": "07 Apr 2009",
+            "purpose": "Mahavir Jayanti"
+        },
+        {
+            "date": "10 Apr 2009",
+            "purpose": "Good Friday"
+        },
+        {
+            "date": "14 Apr 2009",
+            "purpose": "Dr. Ambedkar Jayanti"
+        },
+        {
+            "date": "30 Apr 2009",
+            "purpose": "General Elections (Lok Sabha)"
+        },
+        {
+            "date": "01 May 2009",
+            "purpose": "Maharashtra Day"
+        },
+        {
+            "date": "21 Sep 2009",
+            "purpose": "Ramzan Id"
+        },
+        {
+            "date": "28 Sep 2009",
+            "purpose": "Dasera"
+        },
+        {
+            "date": "02 Oct 2009",
+            "purpose": "Gandhi Jayanti"
+        },
+        {
+            "date": "13 Oct 2009",
+            "purpose": "Assembly Elections - Maharashtra"
+        },
+        {
+            "date": "19 Oct 2009",
+            "purpose": "Diwali ( Bhaubeez)"
+        },
+        {
+            "date": "02 Nov 2009",
+            "purpose": "Gurunanak Jayanti"
+        },
+        {
+            "date": "25 Dec 2009",
+            "purpose": "Christmas"
+        },
+        {
+            "date": "28 Dec 2009",
+            "purpose": "Moharram"
+        },
+        {
+            "date": "01 Jan 2010",
+            "purpose": "New Year"
+        },
+        {
+            "date": "26 Jan 2010",
+            "purpose": "Republic Day"
+        },
+        {
+            "date": "12 Feb 2010",
+            "purpose": "Mahashivratri"
+        },
+        {
+            "date": "01 Mar 2010",
+            "purpose": "Holi"
+        },
+        {
+            "date": "24 Mar 2010",
+            "purpose": "Ram Navmi"
+        },
+        {
+            "date": "02 Apr 2010",
+            "purpose": "Good Friday"
+        },
+        {
+            "date": "14 Apr 2010",
+            "purpose": "Dr. Ambedkar Jayanti"
+        },
+        {
+            "date": "10 Sep 2010",
+            "purpose": "Ramzan Id"
+        },
+        {
+            "date": "05 Nov 2010",
+            "purpose": "Diwali Amavasya(Laxmi Puja)"
+        },
+        {
+            "date": "17 Nov 2010",
+            "purpose": "Bakri Id"
+        },
+        {
+            "date": "17 Dec 2010",
+            "purpose": "Moharram"
+        },
+        {
+            "date": "26 Jan 2011",
+            "purpose": "Republic Day"
+        },
+        {
+            "date": "02 Mar 2011",
+            "purpose": "Mahashivratri"
+        },
+        {
+            "date": "12 Apr 2011",
+            "purpose": "Ram Navmi"
+        },
+        {
+            "date": "14 Apr 2011",
+            "purpose": "Dr. Ambedkar Jayanti"
+        },
+        {
+            "date": "22 Apr 2011",
+            "purpose": "Good Friday"
+        },
+        {
+            "date": "15 Aug 2011",
+            "purpose": "Independence Day"
+        },
+        {
+            "date": "31 Aug 2011",
+            "purpose": "Ramzan Id"
+        },
+        {
+            "date": "01 Sep 2011",
+            "purpose": "Ganesh Chaturthi"
+        },
+        {
+            "date": "06 Oct 2011",
+            "purpose": "Dasera"
+        },
+        {
+            "date": "26 Oct 2011",
+            "purpose": "Diwali Amavasya(Laxmi Puja)"
+        },
+        {
+            "date": "27 Oct 2011",
+            "purpose": "Diwali (Balipratipada)"
+        },
+        {
+            "date": "07 Nov 2011",
+            "purpose": "Bakri Id"
+        },
+        {
+            "date": "10 Nov 2011",
+            "purpose": "Gurunanak Jayanti"
+        },
+        {
+            "date": "06 Dec 2011",
+            "purpose": "Moharram"
+        },
+        {
+            "date": "26 Jan 2012",
+            "purpose": "Republic Day"
+        },
+        {
+            "date": "20 Feb 2012",
+            "purpose": "Mahashivratri"
+        },
+        {
+            "date": "08 Mar 2012",
+            "purpose": "Holi"
+        },
+        {
+            "date": "05 Apr 2012",
+            "purpose": "Mahavir Jayanti"
+        },
+        {
+            "date": "06 Apr 2012",
+            "purpose": "Good Friday"
+        },
+        {
+            "date": "01 May 2012",
+            "purpose": "Maharashtra Day"
+        },
+        {
+            "date": "15 Aug 2012",
+            "purpose": "Independence Day"
+        },
+        {
+            "date": "20 Aug 2012",
+            "purpose": "Ramzan Id"
+        },
+        {
+            "date": "19 Sep 2012",
+            "purpose": "Ganesh Chaturthi"
+        },
+        {
+            "date": "02 Oct 2012",
+            "purpose": "Mahatma Gandhi Jayanti"
+        },
+        {
+            "date": "24 Oct 2012",
+            "purpose": "Dussera – Vijaya Dashmi"
+        },
+        {
+            "date": "13 Nov 2012",
+            "purpose": "Diwali Amavasya (Laxmi Pujan)"
+        },
+        {
+            "date": "14 Nov 2012",
+            "purpose": "Diwali Balipratipada"
+        },
+        {
+            "date": "28 Nov 2012",
+            "purpose": "Gurunanak Jayanti"
+        },
+        {
+            "date": "25 Dec 2012",
+            "purpose": "Christmas"
+        },
+        {
+            "date": "27 Mar 2013",
+            "purpose": "Holi"
+        },
+        {
+            "date": "29 Mar 2013",
+            "purpose": "Good Friday"
+        },
+        {
+            "date": "19 Apr 2013",
+            "purpose": "Ram Navmi"
+        },
+        {
+            "date": "24 Apr 2013",
+            "purpose": "Mahavir Jayanti"
+        },
+        {
+            "date": "01 May 2013",
+            "purpose": "May Day"
+        },
+        {
+            "date": "09 Aug 2013",
+            "purpose": "Ramzan ID"
+        },
+        {
+            "date": "15 Aug 2013",
+            "purpose": "Independence Day"
+        },
+        {
+            "date": "09 Sep 2013",
+            "purpose": "Ganesh Chaturthi"
+        },
+        {
+            "date": "02 Oct 2013",
+            "purpose": "Gandhi Jayanti"
+        },
+        {
+            "date": "16 Oct 2013",
+            "purpose": "Bakri ID"
+        },
+        {
+            "date": "04 Nov 2013",
+            "purpose": "Diwali - Balipratipada"
+        },
+        {
+            "date": "14 Nov 2013",
+            "purpose": "Moharram"
+        },
+        {
+            "date": "15 Nov 2013",
+            "purpose": "Moharram"
+        },
+        {
+            "date": "25 Dec 2013",
+            "purpose": "Christmas"
+        },
+        {
+            "date": "27 Feb 2014",
+            "purpose": "Mahashivratri"
+        },
+        {
+            "date": "17 Mar 2014",
+            "purpose": "Holi"
+        },
+        {
+            "date": "08 Apr 2014",
+            "purpose": "Ram Navami"
+        },
+        {
+            "date": "14 Apr 2014",
+            "purpose": "Dr.Baba Saheb Ambedkar Jayanti"
+        },
+        {
+            "date": "18 Apr 2014",
+            "purpose": "Good Friday"
+        },
+        {
+            "date": "01 May 2014",
+            "purpose": "Maharashtra Day"
+        },
+        {
+            "date": "29 Jul 2014",
+            "purpose": "Id-Ul-Fitr (Ramzan Id)"
+        },
+        {
+            "date": "15 Aug 2014",
+            "purpose": "Independence Day"
+        },
+        {
+            "date": "29 Aug 2014",
+            "purpose": "Ganesh Chaturthi"
+        },
+        {
+            "date": "02 Oct 2014",
+            "purpose": "Mahatma Gandhi Jayanthi"
+        },
+        {
+            "date": "03 Oct 2014",
+            "purpose": "Dussehra"
+        },
+        {
+            "date": "06 Oct 2014",
+            "purpose": "Bakri Id"
+        },
+        {
+            "date": "23 Oct 2014",
+            "purpose": "Diwali Laxmi Pujan"
+        },
+        {
+            "date": "24 Oct 2014",
+            "purpose": "Diwali Balipratipada"
+        },
+        {
+            "date": "04 Nov 2014",
+            "purpose": "Muharram"
+        },
+        {
+            "date": "06 Nov 2014",
+            "purpose": "Gurunanak Jayanti"
+        },
+        {
+            "date": "25 Dec 2014",
+            "purpose": "Christmas"
+        }
+    ],
+    "nse": [
+        {
+            "date": "06 Mar 2008",
+            "purpose": "Mahashivratri"
+        },
+        {
+            "date": "20 Mar 2008",
+            "purpose": "Id-E-Milad"
+        },
+        {
+            "date": "21 Mar 2008",
+            "purpose": "Good Friday"
+        },
+        {
+            "date": "14 Apr 2008",
+            "purpose": "Dr. Babasaheb Ambedkar Jayanthi"
+        },
+        {
+            "date": "18 Apr 2008",
+            "purpose": "Mahavir Jayanti"
+        },
+        {
+            "date": "01 May 2008",
+            "purpose": "Maharashtra Day"
+        },
+        {
+            "date": "19 May 2008",
+            "purpose": "Buddha Pournima"
+        },
+        {
+            "date": "15 Aug 2008",
+            "purpose": "Independence Day"
+        },
+        {
+            "date": "03 Sep 2008",
+            "purpose": "Ganesh Chaturthi"
+        },
+        {
+            "date": "02 Oct 2008",
+            "purpose": "Gandhi Jayanti/Ramzan Id"
+        },
+        {
+            "date": "09 Oct 2008",
+            "purpose": "Dasera"
+        },
+        {
+            "date": "28 Oct 2008",
+            "purpose": "Diwali (Lakshmi Poojan)"
+        },
+        {
+            "date": "30 Oct 2008",
+            "purpose": "Diwali (Bhau Bhij)"
+        },
+        {
+            "date": "13 Nov 2008",
+            "purpose": "Gurunanak Jayanthi"
+        },
+        {
+            "date": "09 Dec 2008",
+            "purpose": "Bakri Id"
+        },
+        {
+            "date": "25 Dec 2008",
+            "purpose": "Christmas"
+        },
+        {
+            "date": "08 Jan 2009",
+            "purpose": "Moharram"
+        },
+        {
+            "date": "26 Jan 2009",
+            "purpose": "Republic Day"
+        },
+        {
+            "date": "23 Feb 2009",
+            "purpose": "Mahashivratri"
+        },
+        {
+            "date": "10 Mar 2009",
+            "purpose": "Id-E-Milad"
+        },
+        {
+            "date": "11 Mar 2009",
+            "purpose": "Holi"
+        },
+        {
+            "date": "03 Apr 2009",
+            "purpose": "Ram Navmi"
+        },
+        {
+            "date": "07 Apr 2009",
+            "purpose": "Mahavir Jayanti"
+        },
+        {
+            "date": "10 Apr 2009",
+            "purpose": "Good Friday"
+        },
+        {
+            "date": "14 Apr 2009",
+            "purpose": "Dr. Ambedkar Jayanti"
+        },
+        {
+            "date": "30 Apr 2009",
+            "purpose": "General Elections (Lok Sabha)"
+        },
+        {
+            "date": "01 May 2009",
+            "purpose": "Maharashtra Day"
+        },
+        {
+            "date": "21 Sep 2009",
+            "purpose": "Ramzan Id"
+        },
+        {
+            "date": "28 Sep 2009",
+            "purpose": "Dasera"
+        },
+        {
+            "date": "02 Oct 2009",
+            "purpose": "Gandhi Jayanti"
+        },
+        {
+            "date": "13 Oct 2009",
+            "purpose": "Assembly Elections - Maharashtra"
+        },
+        {
+            "date": "19 Oct 2009",
+            "purpose": "Diwali ( Bhaubeez)"
+        },
+        {
+            "date": "02 Nov 2009",
+            "purpose": "Gurunanak Jayanti"
+        },
+        {
+            "date": "25 Dec 2009",
+            "purpose": "Christmas"
+        },
+        {
+            "date": "28 Dec 2009",
+            "purpose": "Moharram"
+        },
+        {
+            "date": "01 Jan 2010",
+            "purpose": "New Year"
+        },
+        {
+            "date": "26 Jan 2010",
+            "purpose": "Republic Day"
+        },
+        {
+            "date": "12 Feb 2010",
+            "purpose": "Mahashivratri"
+        },
+        {
+            "date": "01 Mar 2010",
+            "purpose": "Holi"
+        },
+        {
+            "date": "24 Mar 2010",
+            "purpose": "Ram Navmi"
+        },
+        {
+            "date": "02 Apr 2010",
+            "purpose": "Good Friday"
+        },
+        {
+            "date": "14 Apr 2010",
+            "purpose": "Dr. Ambedkar Jayanti"
+        },
+        {
+            "date": "10 Sep 2010",
+            "purpose": "Ramzan Id"
+        },
+        {
+            "date": "05 Nov 2010",
+            "purpose": "Diwali Amavasya(Laxmi Puja)"
+        },
+        {
+            "date": "17 Nov 2010",
+            "purpose": "Bakri Id"
+        },
+        {
+            "date": "17 Dec 2010",
+            "purpose": "Moharram"
+        },
+        {
+            "date": "26 Jan 2011",
+            "purpose": "Republic Day"
+        },
+        {
+            "date": "02 Mar 2011",
+            "purpose": "Mahashivratri"
+        },
+        {
+            "date": "12 Apr 2011",
+            "purpose": "Ram Navmi"
+        },
+        {
+            "date": "14 Apr 2011",
+            "purpose": "Dr. Ambedkar Jayanti"
+        },
+        {
+            "date": "22 Apr 2011",
+            "purpose": "Good Friday"
+        },
+        {
+            "date": "15 Aug 2011",
+            "purpose": "Independence Day"
+        },
+        {
+            "date": "31 Aug 2011",
+            "purpose": "Ramzan Id"
+        },
+        {
+            "date": "01 Sep 2011",
+            "purpose": "Ganesh Chaturthi"
+        },
+        {
+            "date": "06 Oct 2011",
+            "purpose": "Dasera"
+        },
+        {
+            "date": "26 Oct 2011",
+            "purpose": "Diwali Amavasya(Laxmi Puja)"
+        },
+        {
+            "date": "27 Oct 2011",
+            "purpose": "Diwali (Balipratipada)"
+        },
+        {
+            "date": "07 Nov 2011",
+            "purpose": "Bakri Id"
+        },
+        {
+            "date": "10 Nov 2011",
+            "purpose": "Gurunanak Jayanti"
+        },
+        {
+            "date": "06 Dec 2011",
+            "purpose": "Moharram"
+        },
+        {
+            "date": "26 Jan 2012",
+            "purpose": "Republic Day"
+        },
+        {
+            "date": "20 Feb 2012",
+            "purpose": "Mahashivratri"
+        },
+        {
+            "date": "08 Mar 2012",
+            "purpose": "Holi"
+        },
+        {
+            "date": "05 Apr 2012",
+            "purpose": "Mahavir Jayanti"
+        },
+        {
+            "date": "06 Apr 2012",
+            "purpose": "Good Friday"
+        },
+        {
+            "date": "01 May 2012",
+            "purpose": "Maharashtra Day"
+        },
+        {
+            "date": "15 Aug 2012",
+            "purpose": "Independence Day"
+        },
+        {
+            "date": "20 Aug 2012",
+            "purpose": "Ramzan Id"
+        },
+        {
+            "date": "19 Sep 2012",
+            "purpose": "Ganesh Chaturthi"
+        },
+        {
+            "date": "02 Oct 2012",
+            "purpose": "Mahatma Gandhi Jayanti"
+        },
+        {
+            "date": "24 Oct 2012",
+            "purpose": "Dussera – Vijaya Dashmi"
+        },
+        {
+            "date": "13 Nov 2012",
+            "purpose": "Diwali Amavasya (Laxmi Pujan)"
+        },
+        {
+            "date": "14 Nov 2012",
+            "purpose": "Diwali Balipratipada"
+        },
+        {
+            "date": "28 Nov 2012",
+            "purpose": "Gurunanak Jayanti"
+        },
+        {
+            "date": "25 Dec 2012",
+            "purpose": "Christmas"
+        },
+        {
+            "date": "27 Mar 2013",
+            "purpose": "Holi"
+        },
+        {
+            "date": "29 Mar 2013",
+            "purpose": "Good Friday"
+        },
+        {
+            "date": "19 Apr 2013",
+            "purpose": "Ram Navmi"
+        },
+        {
+            "date": "24 Apr 2013",
+            "purpose": "Mahavir Jayanti"
+        },
+        {
+            "date": "01 May 2013",
+            "purpose": "May Day"
+        },
+        {
+            "date": "09 Aug 2013",
+            "purpose": "Ramzan ID"
+        },
+        {
+            "date": "15 Aug 2013",
+            "purpose": "Independence Day"
+        },
+        {
+            "date": "09 Sep 2013",
+            "purpose": "Ganesh Chaturthi"
+        },
+        {
+            "date": "02 Oct 2013",
+            "purpose": "Gandhi Jayanti"
+        },
+        {
+            "date": "16 Oct 2013",
+            "purpose": "Bakri ID"
+        },
+        {
+            "date": "04 Nov 2013",
+            "purpose": "Diwali - Balipratipada"
+        },
+        {
+            "date": "14 Nov 2013",
+            "purpose": "Moharram"
+        },
+        {
+            "date": "15 Nov 2013",
+            "purpose": "Moharram"
+        },
+        {
+            "date": "25 Dec 2013",
+            "purpose": "Christmas"
+        },
+        {
+            "date": "27 Feb 2014",
+            "purpose": "Mahashivratri"
+        },
+        {
+            "date": "17 Mar 2014",
+            "purpose": "Holi"
+        },
+        {
+            "date": "08 Apr 2014",
+            "purpose": "Ram Navami"
+        },
+        {
+            "date": "14 Apr 2014",
+            "purpose": "Dr.Baba Saheb Ambedkar Jayanti"
+        },
+        {
+            "date": "18 Apr 2014",
+            "purpose": "Good Friday"
+        },
+        {
+            "date": "01 May 2014",
+            "purpose": "Maharashtra Day"
+        },
+        {
+            "date": "29 Jul 2014",
+            "purpose": "Id-Ul-Fitr (Ramzan Id)"
+        },
+        {
+            "date": "15 Aug 2014",
+            "purpose": "Independence Day"
+        },
+        {
+            "date": "29 Aug 2014",
+            "purpose": "Ganesh Chaturthi"
+        },
+        {
+            "date": "02 Oct 2014",
+            "purpose": "Mahatma Gandhi Jayanthi"
+        },
+        {
+            "date": "03 Oct 2014",
+            "purpose": "Dussehra"
+        },
+        {
+            "date": "06 Oct 2014",
+            "purpose": "Bakri Id"
+        },
+        {
+            "date": "23 Oct 2014",
+            "purpose": "Diwali Laxmi Pujan"
+        },
+        {
+            "date": "24 Oct 2014",
+            "purpose": "Diwali Balipratipada"
+        },
+        {
+            "date": "04 Nov 2014",
+            "purpose": "Muharram"
+        },
+        {
+            "date": "06 Nov 2014",
+            "purpose": "Gurunanak Jayanti"
+        },
+        {
+            "date": "25 Dec 2014",
+            "purpose": "Christmas"
+        }
+    ]
+}

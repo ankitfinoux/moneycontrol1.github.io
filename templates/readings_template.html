@@ -1,0 +1,25 @@
+<div class="series-details series-details-<%=mode%>">
+	<a href=<%=link.company%>><div title='<%=name%>' class="name name-<%=mode%>"><%=name%></div></a>
+	<!--<div class="exchange exchange-<%=mode%> <%if(!exchange){%><%=classNames.hide%><%}%>">(<span class="val"><%=exchange%></span>)</div>-->
+	<!--<div class="subtitle subtitle-<%=mode%>" title='<%=subtitle%>' ><%=subtitle%></div>-->
+</div>
+<div class="core-readings">
+	<%if(isAdvanced){%>
+		<div class="arrow"></div>
+		<div class="core"></div>
+		<div class="change"></div>
+	<%}else{%>
+		<div class="core core-<%=mode%>"></div>
+	<%}%>
+</div>
+<div class="sub-readings">
+	<%for(var i=0, len = subReadings.length; i < len; i++){
+			var reading = subReadings[i];
+			var toHide = ((!isHist && i < len-1) || (!showVolume && i === len-1))? classNames.hide : '';
+		%>
+		<div class="reading-box <%=toHide%> reading-box-<%=mode%>" id="<%=reading%><%=idSuffixes.readingsBox%>">
+			<div class="reading-name reading-name-<%=mode%>"><%=reading%></div>
+			<div class="reading-value reading-value-<%=mode%>" id="<%=reading%>"></div>
+		</div>
+	<%}%>
+</div>

@@ -1,0 +1,22 @@
+<div class="popup-wrapper">
+	<div class="inner-popup-wrapper">
+		<header class="popup-header">
+			<div class="popup-title"><%=name%></div>
+			<div class="close"></div>
+		</header>
+		<div class="popup-main">
+			<ul>
+				<% for(var i=0, len = popupOpt.length; i<len; i++){ %>
+					<li>
+						<div class="text"><%=popupOpt[i].text%><span class="necessary"><%if(!popupOpt[i].optional){%>*<%}%></span></div>
+						<input class="popup-input" type="text" id='<%=popupOpt[i].key%><%=i%>' value='<%if(typeof id  !=="undefined" && id=="rsi"){%><%=param.window%><%}%>' <%if(!i){%>autofocus<%}%>/>
+						
+					</li>
+				<% } %>
+			</ul>
+		</div>
+		<footer class="popup-footer">
+			<button class="buttons draw_btn">Draw</button>
+		</footer>
+	</div>
+</div>

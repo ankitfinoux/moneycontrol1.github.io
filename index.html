@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Advanced Chart</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="inc/widget.css">
+
+    <style type="text/css">
+    #container1 {
+        min-height: 415px;
+        width: 800px;
+        padding: 40px 0px 0px 180px;
+    }
+    #container4 {
+        min-height: 515px;
+        width: 800px;
+        padding: 40px 0px 0px 180px;
+    }
+    #container2 {
+        min-height: 515px;
+        width: 470px;
+    }
+    </style>
+</head>
+
+<body>
+    <!--ankitz -->
+    <div>
+        <span style="padding: 20px 0px 0px 280px;">Select Company:<select id="drpBaseCompany" onchange="drawBaseCompany();">
+            <option value="28074">Bajaj Auto Ltd</option>
+            <option value="51">Bajaj Electricals Ltd</option>
+            <option value="12019">Coal India Ltd</option>
+            <option value="114">Cipla Ltd</option>
+            <option value="6890">DLF Ltd</option>
+            <option value="231">GlaxoSmithkline Healthcare Ltd</option>
+            <option value="5656">HCL Technologies Ltd</option>
+            <option value="4987">HDFC Bank Ltd</option>
+            <option value="237">Hero MotoCorp Ltd</option>
+            <option value="255">Hindustan Unilever Ltd</option>
+            <option value="5418">ICICI Bank Ltd-NSE</option>
+            <option value="5419">ICICI Bank Ltd-BSE</option>
+            <option value="2806">Infosys Ltd</option>
+            <option value="348">Larsen & Toubro Ltd</option>
+            <option value="469">Ranbaxy Laboratories Ltd</option>
+            <option value="476">Reliance Industries Ltd</option>
+            <option value="2295" selected="selected">Tata Communications Ltd</option>
+            <option value="5400">Tata Consultancy Services Ltd</option>
+            <option value="560">Tata Motors Ltd</option>
+            <option value="566">Tata Steel Ltd</option>
+            <option value="17215">Tech Mahindra Ltd</option>
+            <option value="614">Wipro Ltd</option>
+        </select>
+        </span>
+
+        <span style="padding: 20px 0px 0px 40px;">Compare with:<select id="drpCompareCompany">
+            <option value="-1" selected="selected">add a Company</option>
+            <option value="28074" >Bajaj Auto Ltd</option>
+            <option value="51">Bajaj Electricals Ltd</option>
+            <option value="12019">Coal India Ltd</option>
+            <option value="114">Cipla Ltd</option>
+            <option value="6890">DLF Ltd</option>
+            <option value="231">GlaxoSmithkline Healthcare Ltd</option>
+            <option value="5656">HCL Technologies Ltd</option>
+            <option value="4987">HDFC Bank Ltd</option>
+            <option value="237">Hero MotoCorp Ltd</option>
+            <option value="255">Hindustan Unilever Ltd</option>
+            <option value="5418">ICICI Bank Ltd-NSE</option>
+            <option value="5419">ICICI Bank Ltd-BSE</option>
+            <option value="2806">Infosys Ltd</option>
+            <option value="348">Larsen & Toubro Ltd</option>
+            <option value="469">Ranbaxy Laboratories Ltd</option>
+            <option value="476">Reliance Industries Ltd</option>
+            <option value="2295">Tata Communications Ltd</option>
+            <option value="5400">Tata Consultancy Services Ltd</option>
+            <option value="560">Tata Motors Ltd</option>
+            <option value="566">Tata Steel Ltd</option>
+            <option value="17215">Tech Mahindra Ltd</option>
+            <option value="614">Wipro Ltd</option>
+        </select>
+            <input id="btnAddCompare" type="button" value="ADD" onclick="addCompany();" />
+        </span>
+    </div>
+    <div id="container1"></div>
+    <div id="container4"></div>
+
+</body>
+<script data-main="js/charting/main" src="js/charting/libs/requirejs/require.js"></script>
+<!-- <script language="javascript" type="text/javascript" src="js/charting/ankitz.js"></script>
+ -->
+<script type="text/javascript">
+</script>
+
+</html>
